@@ -18,7 +18,7 @@ export default function Sidebar() {
         ),
       // add in the rest of our document items
       ...S.documentTypeListItems().filter(
-        item => item.getId() !== 'storeSettings'
+        (item) => item.getId() !== 'storeSettings'
       ),
     ]);
 }
